@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--  This page is used for Product_Updated -->
+<html>
+	<head>
+	<title>Krogerice: your sweet grocery stop</title>
+		 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="../css/general.css">
+
+	<!-- The following links are for bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- The Above links are for bootstrap -->
+
+
+		<!-- The following links are for Semantic UI -->
+		<link rel="stylesheet" type="text/css" href="../css/Semantic_UI/semantic.min.css">
+				<script
+				  src="https://code.jquery.com/jquery-3.1.1.min.js"
+				  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+				  crossorigin="anonymous"></script>
+				<script src="../css/Semantic_UI/semantic.min.js"></script>
+
+
+		<link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
+		<!-- The abouve links are for Semantic UI and google fonts -->
+
+
+	</head>
+
+	<body>
+
+		<!-- NavBar in the heading of every page -->
+		 <nav class="navbar navbar-fixed-top navbar-custom">
+	        <div class="container-fluid">
+	            <div class="navbar-header">
+	                <a class="navbar-brand" id="headingName" href="home.html" >Krogerice</a>
+	            </div>
+	            <div class="collapse navbar-collapse">
+	                <ul class="nav  navbar-nav navbar-right">
+	                    <li>
+						    <div class="dropdown">
+							  <button class="ui inverted brown button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							 	 Employee
+							 	 <span class="caret"></span>
+							  </button>
+
+							  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							    <li><a href="EmployeeQuery.html">Special Query</a></li>
+							    <!-- <li role="separator" class="divider"></li> -->
+							    <li><a href="EmployeeIns.html">Insert</a></li>
+							  </ul>
+							</div>
+	                    </li>
+	                    <li>
+	                    	<div class="dropdown">
+							  <button class="ui inverted brown button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							 	 Product
+							 	 <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							    <li><a href="ProductQuery.html">Special Query</a></li>
+							    <!-- <li role="separator" class="divider"></li> -->
+							    <li><a href="ProductIns.html">Insert</a></li>
+							  </ul>
+							</div>
+	                    </li>
+	                    <li>
+	                    	<div class="dropdown">
+							  <button class="ui inverted brown button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							 	 Supplier
+							 	 <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							    <li><a href="SupplierQuery.html">Special Query</a></li>
+							    <!-- <li role="separator" class="divider"></li> -->
+							    <li><a href="SupplierIns.html">Insert</a></li>
+							  </ul>
+							</div>
+	                    </li>
+	                    <li>
+	                    	<div class="dropdown">
+							  <button class="ui inverted brown button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							 	 Transaction
+							 	 <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							    <li><a href="TransactionQuery.html">Special Query</a></li>
+							    <!-- <li role="separator" class="divider"></li> -->
+							    <li><a href="#">Insert</a></li>
+							  </ul>
+							</div>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </nav>
+		<!-- NavBar in the heading of every page -->
+
+		<div id="header" class="request_submit clear-float">
+			<h1>Modify Product Info</h1>
+			<div class="container">
+				<div class="row">
+					<div style="width: 30%; margin: 25px auto">
+						<form action=# method="post" id="Product_Insertion">
+							<div class="form-group">
+								<input class="form-control" type="text" id="ProductID" value="">
+							</div>
+							<div class="form-group">
+								<input class="form-control" type="text" id="ProductName" placeholder="ProductName">
+							</div>
+							<div class="form-group">
+								<input class="form-control" type="text" id="Category" placeholder="Category">
+							</div>
+							<div class="form-group">
+								<input class="form-control" type="text" id="BuyingPrice" placeholder="BuyingPrice">
+							</div>
+							<div class="form-group">
+								<input class="form-control" type="text" id="SellingPrice" placeholder="SellingPrice">
+							</div>
+							<div class="form-group">
+								<input class="form-control" type="text" id="SupplierID" placeholder="SupplierID">
+							</div>
+							<div class="form-group">
+								<input class="form-control" type="text" id="StorageAmount" placeholder="StorageAmount">
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" id="Description" placeholder="Description"></textarea>
+							</div>
+							<div class="form-group submit_div">
+								<button class="ui brown button form-control">Reset</button>
+							</div>
+						</form>
+						<button class="ui brown button" onclick="doPost1()" align="center">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+<!-- 
+		<div class="request_submit clear-float">
+			
+			<div class="container">
+				<form action=# method="post" id="Product_Insertion">
+					
+					ProductID:<span id="fuck"/> <input type="text" value= "" id="ProductID">
+					ProductName: <input type="text" id="ProductName">
+					Category: <input type="text" id="Category">
+					<br/>
+					BuyingPrice: <input type="text" id="BuyingPrice">
+					SellingPrice: <input type="text" id="SellingPrice">
+					<br/>
+					StorageAmount: <input type="text" id="StorageAmount">
+					<br/>
+					Description: <input type="text" id="Description" style="height:40px">
+					<br/>
+					<!--  supplierID 先放着-->
+					<!-- <input type="button" value="Submit" onclick="doPost1()">
+					<input type="reset">
+				</form>
+			</div>
+		</div> --> -->
+		<div class="Display clear-float">
+			<div class="container">
+				<div class="holder"></div>
+				<table class="Displaytable" id="Display_table">
+
+				</table>
+			</div>
+		</div>
+
+
+	</body>
+	<script type="text/javascript">
+		document.getElementById('ProductID').value =window.localStorage.ProductID;
+
+		function doPost1() {
+    			//var PID = document.getElementById('ProductID').value;
+    			var EID = window.localStorage.EmployeeID;
+    			var DName = window.localStorage.DepartmentName;
+    			var PName = document.getElementById('ProductName').value;
+    			var BPrice = document.getElementById('BuyingPrice').value;
+    			var SPrice = document.getElementById('SellingPrice').value;
+    			var Cat= document.getElementById('Category').value;
+    			var StgAmnt= document.getElementById('StorageAmount').value;
+    			var Dscp= document.getElementById('Description').value;
+    			var SID = document.getElementById('SupplierID').value;
+    			var PID = window.localStorage.ProductID;
+    			console.log(StgAmnt);
+    			console.log(SID);
+
+				$.post('http://localhost:8080/login', {operation:"productUpdate", EmployeeID: EID, ProductID:window.localStorage.ProductID, DepartmentName: DName, ProductName:PName, BuyingPrice:BPrice, SellingPrice:SPrice, Category:Cat, StorageAmount: StgAmnt, Description: Dscp,SupplierID:SID}, function(data) {
+					if(data.status == 1) {
+						alert("Update successfully!");
+					} 
+					else if(data.status == -1){
+						alert("Bad Operation. Please Try again!");
+					}
+				});
+		}
+
+	</script>
+
+</html>

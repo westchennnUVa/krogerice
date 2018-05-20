@@ -1,0 +1,380 @@
+html, body {
+  height:100%;
+  padding: 0;
+  margin: 0;
+}
+
+body:before {
+  background:url("./images/9.jpg") no-repeat center center fixed;
+  display: block; content:""; position: absolute; z-index:-1;
+  top:0; left: 0; right: 0; height: 100%;
+  opacity:.6;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#headingName{
+    font-family: 'Gamja Flower', cursive;
+    font-size: 300%;
+}
+
+.navbar-default{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.dropdown{
+    margin: 0 4px 0 4px;
+    height: 80%;
+    margin-top: 8px;
+}
+
+.navbar-brand{
+    color:black;
+}
+
+.btn-link{
+    color: black;
+}
+
+.sign{
+    margin:0 5px 0 5px;
+}
+
+.symbol{
+    margin-right: 4px;
+}
+
+.thumbnail img
+{
+    width: 100%;
+}
+ 
+.thumbnail
+{
+    padding: 0;
+}
+
+.thumbnail .caption-full
+{
+    padding: 9px;
+}
+
+#mainform{
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: block;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.Display {
+    margin-top: 20px;
+}
+
+.request-part {
+    margin-top: 50px;
+}
+.Display.Container {
+    border-color: #666666;
+    border-width: 1px;
+}
+.Display.Displaytable {
+    font-family: verdana,arial;
+    font-size:11px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+}
+
+.Displaytable td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #ffffff;
+}
+.Displaytable th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #dedede;
+}
+
+h1, h3, h4, h5, p {
+    margin-bottom: 22px;
+}
+.clear-float,
+.clear-float:after,
+.clear-float:before {
+    contet: "";
+    display: block;
+    clear: both;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+.column2,
+.column5,
+.column3,
+.column4 {
+    display: block;
+    position: relative;
+    min-height: 1px;
+    float: left;
+}
+
+.column4 {
+    width: 25%;
+}
+.column3 {
+    width: 30%;
+}
+.column2 {
+    width: 20%;
+}
+.column5 {
+    width: 50%;
+}
+
+.header-nav {
+    padding: 5px;
+}
+.header1 {
+    /* Most popular Recipes: */
+    font-family: Helvetica-Light;
+    font-size: 18px;
+    color: #DF1919;
+}
+
+.switch-font {
+    color: rgba(255,255,255,0.6);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+}
+
+.morebtn {
+    /* More: */
+    font-family: Helvetica-Bold;
+    font-size: 14px;
+    color: #DF1919;
+}
+
+
+.morebtn:hover {
+    color: #80bdff;
+    text-decoration: none;
+}
+
+
+.Refreshbtn {
+    font-family: Helvetica-Bold;
+    font-size: 14px;
+    color: #DF1919;
+    border: hidden;
+}
+.Refreshbtn:hover {
+    color: #80bdff;
+    text-decoration: none;
+    border: hidden;
+}
+
+.centerp {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.smallpic {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-nav .item {
+    display: inline-block;
+    padding: 6px 10px;
+    /*color: #dc3545;*/
+    font-family: Helvetica-Bold;
+    font-size: 14px;
+    color: #DF1919;
+}
+.header-nav .item:hover {
+    color: #80bdff;
+    text-decoration: none;
+}
+
+.search {
+    padding: 20px;
+}
+.search .search_button{
+    /* Buttons / Primary: */
+    box-shadow: 0 2px 4px 0 rgba(225,11,11,0.50);
+}
+
+.search .search_box {
+    /* Input / Text: */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search .logo {
+    /* Cook & Eat.COM: */
+    font-family: ComicSansMS-Bold;
+    font-size: 36px;
+    color: #DF1919;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#brand {
+    font-family: 'Pacifico', cursive;
+    color: red;
+    font-size: 40px;
+}
+
+#search-btn {
+    background-color: #dd3915;
+    color: white;
+}
+
+#searchtxt {
+    width: 200px;
+}
+
+#nav-text {
+    color: #dd3915;
+}
+
+
+body {
+    padding-top: 50px; 
+    margin: 0 auto;
+} 
+
+.align-center {
+    width: 500px;
+    margin: 100px auto;
+}
+
+
+#subheader {
+    color: #222;
+    font-family: sans-serif;
+}
+
+
+input[name=email], input[name=password], input[name=password2], input[name=username] {
+  width: 100%;
+  padding: 13px;
+  margin: 4px auto 20px auto;
+  background: #f1f1f1;
+  border: none;
+}
+
+#psw {
+    color: #222;
+    font-family: sans-serif;
+}
+
+.submit-btn {
+    background-color: #dd3915;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.submit-btn:hover {
+  opacity:1;
+}
+
+#fb, #gg {
+    width: 49.5%;
+}
+
+#ggimage {
+    width: 25px;
+}
+
+#fbimage {
+    width: 25px;
+}
+
+.navbar-collapse {
+    margin-left: 500px;
+}
+
+.nav-form {
+    margin-left: 50px;
+}
+
+.navbar-brand {
+
+}
+
+
+
+

@@ -1,0 +1,73 @@
+html, body {
+  height:100%;
+  padding: 0;
+  margin: 0;
+}
+
+body:before {
+  background:url("../images/9.jpg") no-repeat center center fixed;
+  display: block; content:""; position: fixed; z-index:-1;
+  top:0; left: 0; right: 0; height: 100%;
+  opacity:.6;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#headingName{
+    font-family: 'Gamja Flower', cursive;
+    font-size: 300%;
+}
+
+.navbar-default{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.dropdown{
+    margin: 0 4px 0 4px;
+    height: 80%;
+    margin-top: 8px;
+}
+
+.navbar-brand{
+    color:black;
+}
+
+
+#header{
+	  z-index:1;
+    position: relative;
+    text-align: center;
+    padding-top: 40px;
+    margin-top: 50px;
+}
+
+.submit_div{
+	display: inline-block;
+	width:49%;
+}
+
+table {  
+    color: #333; /* Lighten up font color */
+    font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+    width: 640px; 
+    border-collapse: 
+    collapse; border-spacing: 0;
+}
+
+td, th { border: 1px solid #CCC; height: 30px; } /* Make cells a bit taller */
+
+th {  
+    background: #F3F3F3; /* Light grey background */
+    font-weight: bold; /* Make sure they're bold */
+    text-align: center;
+}
+
+td {  
+    background: #FAFAFA; /* Lighter grey background */
+    text-align: center; /* Center our text */
+}
+
+.tableheader{
+  text-align: center;
+}

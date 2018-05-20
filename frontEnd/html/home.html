@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Krogerice: your sweet grocery stop</title>
+		 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="../css/main.css">
+
+
+		<!-- The following links are for bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- The Above links are for bootstrap -->
+
+
+		<!-- The following links are for Semantic UI -->
+		<link rel="stylesheet" type="text/css" href="../css/Semantic_UI/semantic.min.css">
+				<script
+				  src="https://code.jquery.com/jquery-3.1.1.min.js"
+				  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+				  crossorigin="anonymous"></script>
+				<script src="../css/Semantic_UI/semantic.min.js"></script>
+
+
+		<link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
+		<!-- The abouve links are for Semantic UI and google fonts -->
+
+
+
+	</head>
+
+	<body>
+
+		<!-- NavBar in the heading of every page -->
+		 <nav class="navbar navbar-fixed-top navbar-custom">
+	        <div class="container-fluid">
+	            <div class="navbar-header">
+	                <a class="navbar-brand" id="headingName" href="home.html" >Krogerice</a>
+	            </div>
+	            <div class="collapse navbar-collapse">
+	                <ul class="nav  navbar-nav navbar-right">
+	                    <li>
+						    <div class="dropdown">
+							  <button class="ui inverted brown button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							 	 Employee
+							 	 <span class="caret"></span>
+							  </button>
+
+							  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							    <li><a href="EmployeeQuery.html">Special Query</a></li>
+							    <!-- <li role="separator" class="divider"></li> -->
+							    <li><a href="EmployeeIns.html">Insert</a></li>
+							  </ul>
+							</div>
+	                    </li>
+	                    <li>
+	                    	<div class="dropdown">
+							  <button class="ui inverted brown button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							 	 Product
+							 	 <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							    <li><a href="ProductQuery.html">Special Query</a></li>
+							    <!-- <li role="separator" class="divider"></li> -->
+							    <li><a href="ProductIns.html">Insert</a></li>
+							  </ul>
+							</div>
+	                    </li>
+	                    <li>
+	                    	<div class="dropdown">
+							  <button class="ui inverted brown button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							 	 Supplier
+							 	 <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							    <li><a href="SupplierQuery.html">Special Query</a></li>
+							    <!-- <li role="separator" class="divider"></li> -->
+							    <li><a href="SupplierIns.html">Insert</a></li>
+							  </ul>
+							</div>
+	                    </li>
+	                    <li>
+	                    	<div class="dropdown">
+							  <button class="ui inverted brown button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							 	 Transaction
+							 	 <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							    <li><a href="TransactionQuery.html">Special Query</a></li>
+							    <!-- <li role="separator" class="divider"></li> -->
+							    <li><a href="#">Insert</a></li>
+							  </ul>
+							</div>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </nav>
+		<!-- NavBar in the heading of every page -->
+
+
+	    <div class="container" id="mainform">
+		    <header class="jumbotron">
+		        <div class="container">
+		            <h1>Welcome To Krogerice</h1>
+		            <p>A handy Supermarket Management System</p>
+		            <p>
+		                <a class="btn btn-primary btn-large sign" value="Employee" onclick="doPost1('http://localhost:8080/login')"><span><i class="glyphicon glyphicon-asterisk symbol"></i></span>Employee</a>
+		                <a class="btn btn-primary btn-large sign" value="Product" onclick="doPost2('http://localhost:8080/login')"><span><i class="glyphicon glyphicon-plus symbol"></i></span>Product</a>
+		                <a class="btn btn-primary btn-large sign" value="Supplier" onclick="doPost3('http://localhost:8080/login')"><span><i class="glyphicon glyphicon-send symbol"></i></i></span>Supplier</a>
+		                <a class="btn btn-primary btn-large sign" value="Comment" onclick="doPost4('http://localhost:8080/login')"><span><i class="glyphicon glyphicon-cloud symbol"></i></i></span>Comment</a>
+		                <a class="btn btn-primary btn-large sign" value="Transaction" onclick="doPost5('http://localhost:8080/login')"><span><i class="glyphicon glyphicon-gift symbol"></i></i></span>Transaction</a>
+		            </p>
+		        </div>
+		    </header>
+		</div>
+
+
+
+
+<!-- 
+		<div class="several-buttons clear-float" align="center">
+			<div class="container">
+				<h4>Datatables:</h1>
+				<form>
+					<input type="button" value="Employee" onclick="doPost1('http://localhost:8080/login');">
+					<input type="button" value="Product" onclick="doPost2('http://localhost:8080/login')">
+					<input type="button" value="Supplier" onclick="doPost3('http://localhost:8080/login')">
+					<input type="button" value="Comment" onclick="doPost4('http://localhost:8080/login')">
+					<input type="button" value="Transaction" onclick="doPost5('http://localhost:8080/login')">
+				</form>
+		</div> -->
+
+		<div class="Display clear-float">
+			<div class="container">
+				<div class="holder"></div>
+				<table class="Displaytable" id="Display_table">
+					<!-- <tr> 
+						<th class="tableheader">hhh</th>
+						<th class="tableheader">ooo</th>
+						<th class="tableheader">ttt</th>
+					</tr> -->
+					<!-- <tr>
+						<td>111</td>
+						<td>222</td>
+						<td><button class="btn btn-primary btn-sm" onclick="doEdit">edit</button></td>	
+					</tr>
+					<tr>
+						<td>111</td>
+						<td>222</td>
+						<td><button class="btn btn-primary btn-sm" onclick="doEdit">edit</button></td>	
+					</tr>
+					<tr>
+						<td>111</td>
+						<td>222</td>
+						<td><button class="btn btn-primary btn-sm" onclick="doEdit">edit</button></td>	
+					</tr>
+					<tr>
+						<td>111</td>
+						<td>222</td>
+						<td><button class="btn btn-primary btn-sm" onclick="doEdit">edit</button></td>	
+					</tr>
+					<tr>
+						<td>111</td>
+						<td>222</td>
+						<td><button class="btn btn-primary btn-sm" onclick="doEdit">edit</button></td>	
+					</tr>
+					<tr>
+						<td>111</td>
+						<td>222</td>
+						<td><button class="btn btn-primary btn-sm" onclick="doEdit">edit</button></td>	
+					</tr> -->
+
+
+
+				</table>
+<!-- 				<ul class="Displaytable" id="Display_table">
+					<li > 123</li>
+					<li> 456</li>
+				</ul> -->
+			</div>
+		</div>
+
+		<div class="clear-float" id="Deleteplace"> </div>
+
+
+		<div class="request_submit clear-float">
+			<h1></h1>
+			<div class="container">
+				<div class="row">
+					<div style="width: 30%; margin: 25px auto">
+						<form action=# method="post">
+							<div class="form-group queryform">
+								<input class="form-control" type="text" name="queryitem" id="" placeholder="queryitem">
+							</div>
+							<div class="form-group queryform">
+								<input class="form-control btn btn-primary" type="button" onclick="doJump()" name="queryitem" id="" value="ok">
+							</div>
+							<div class="form-group queryform">
+								<input class="form-control btn btn-primary " type="submit" name="search" id="" value="Search">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+
+			function doEdit2(id) {
+				
+				
+				var val = document.getElementById("ProductID"+id).textContent;
+				window.localStorage.ProductID = val;
+				window.location.href = "ProductUp.html";
+			}
+
+			function doEdit1(id) {
+				
+				
+				var val = document.getElementById("EmployeeID"+id).textContent;
+				window.localStorage.EmployeeID = val;
+				window.location.href = "EmployeeUp.html";
+			}
+
+			function doEdit3(id) {
+				
+				
+				var val = document.getElementById("SupplierID"+id).textContent;
+				window.localStorage.SupplierID = val;
+				window.location.href = "SupplierUp.html";
+			}
+			function doEdit5(id) {
+				
+				
+				var val = document.getElementById("TransactionID"+id).textContent;
+				window.localStorage.SupplierID = val;
+				window.location.href = "SupplierUp.html";
+			}
+
+			function doJump() {
+          		document.getElementById("Deleteplace").innerHTML += "</br><input name=\"按钮\" type=\"button\" onClick=\"doDelete()\" value=\"按钮\"><\/input>"; 
+
+			}
+
+			function doDelete2(id) {
+					var val = document.getElementById("ProductID"+id).textContent;
+					$.post('http://localhost:8080/login', {operation:"DeleteProduct", ProductID: val, EmployeeDepartmentName:window.localStorage.DepartmentName}, function(data) {
+					if(data.status == 1) {
+						alert("Delete successfully!");
+					} 
+						else if(data.status == -1){
+							alert("Delete failed!");
+						} else {
+							alert("Unknown error!");
+						}
+				});
+			}
+			function doDelete5(id) {
+					var val = document.getElementById("TransactionID"+id).textContent;
+					$.post('http://localhost:8080/login', {operation:"DeleteTransaction", ProductID: val}, function(data) {
+					if(data.status == 1) {
+						alert("Delete successfully!");
+					} 
+						else if(data.status == -1){
+							alert("Delete failed!");
+						} else {
+							alert("Unknown error!");
+						}
+				});
+			}
+			function doDelete3(id) {
+					var val = document.getElementById("SupplierID"+id).textContent;
+					$.post('http://localhost:8080/login', {operation:"DeleteSupplier", SupplierID: val, EmployeeDepartmentName:window.localStorage.DepartmentName}, function(data) {
+					if(data.status == 1) {
+						alert("Delete successfully!");
+					} 
+						else if(data.status == -1){
+							alert("Delete failed!");
+						} else {
+							alert("Unknown error!");
+						}
+				});
+			}
+			function doDelete1(id) {
+					var val = document.getElementById("EmployeeID"+id).textContent;
+					$.post('http://localhost:8080/login', {operation:"DeleteEmployee", EmployeeID: val, EmployeeDepartmentName:window.localStorage.DepartmentName}, function(data) {
+					if(data.status == 1) {
+						alert("Delete successfully!");
+					} 
+						else if(data.status == -1){
+							alert("Delete failed!");
+						} else {
+							alert("Unknown error!");
+						}
+				});
+			}
+
+
+		 	function doPost1(url){
+		 		$.post(url, {operation:"Employee"}, function(data){
+		 			//alert(data.EmployeeID);
+		 			$("#Display_table tr").empty();
+		 			$("#Display_table").append("<tr><th>EmployeeID</th><th>EmployeeName</th><th>DepartmentName</th><th>Salary</th><th>Edit</th><th>Delete</th></tr>");
+		 			var s = "";
+		 			for (var i = 0; i < data.EmployeeID.length; i++) {
+		 				s = "<tr><td id=EmployeeID"+i+">"  + data.EmployeeID[i] + "</td><td>" + data.EmployeeName[i] + "</td><td>" + data.DepartmentName[i] + "</td><td>" + data.Salary[i] + "</td><td><button onclick=\"doEdit1(this.id)\" id="+i+">edit</button></td><td><button onclick=\"doDelete1(this.id)\" id="+i+">Delete</button></td></tr>";
+		 				$("#Display_table").append(s);
+		 			}
+		 		});
+		 	}
+
+
+
+
+		 	function doPost2(url){
+		 		$.post(url, {operation:"Product"}, function(data){
+		 			$("#Display_table tr").empty();
+		 			$("#Display_table").append("<tr><th>ProductID</th><th>ProductName</th><th>BuyingPrice</th><th>SellingPrice</th><th>Category</th><th>StorageAmount</th><th>Edit</th><th>Delete</th></tr>");
+		 			var s = "";
+		 			for (var i = 0; i < data.ProductID.length; i++) {
+		 				var j = i+1;
+
+		 				s = "<tr><td id=ProductID"+i+">"  + data.ProductID[i] + "</td><td>" + data.ProductName[i] + "</td><td>"+ data.BuyingPrice[i] + "</td><td>"+ data.SellingPrice[i] + "</td><td>"+ data.Category[i] + "</td><td>"+ data.StorageAmount[i] + "</td><td><button onclick=\"doEdit2(this.id)\" id="+i+">edit</button></td><td><button onclick=\"doDelete2(this.id)\" id="+i+">Delete</button></td></tr>";
+		 				// s = "<tr><td id=ProductID"+i+">" + data.ProductID[i] + "</td><td>" + data.ProductName[i] + "</td><td>"+ data.BuyingPrice[i] + "</td><td>"+ data.SellingPrice[i] + "</td><td>"+ data.Category[i] + "</td><td>"+ data.StorageAmount[i]+ "</td><td>"+ data.Description[i] +  "</td><td><button onclick=\"doEdit(this.id)\" id="+i+">edit</button></td></tr>";
+		 				$("#Display_table").append(s);
+		 			}
+		 			
+		 		});
+		 	}
+		 	function doPost3(url){
+		 		$.post(url, {operation:"Supplier"}, function(data){
+		 			//alert(data.EmployeeID);
+		 			$("#Display_table tr").empty();
+		 			$("#Display_table").append("<tr><th>SupplierID</th><th>SupplierName</th><th>SupplierAddress</th><th>EmployeeID</th><th>Edit</th><th>Delete</th></tr>");
+		 			var s = "";
+		 			for (var i = 0; i < data.SupplierID.length; i++) {
+		 				s = "<tr><td id=SupplierID"+i+">" + data.SupplierID[i] + "</td><td>" + data.SupplierName[i] + "</td><td>" + data.SupplierAddress[i]+ "</td><td>" + data.EmployeeID[i]+ "</td><td><button onclick=\"doEdit3(this.id)\" id="+i+">edit</button></td><td><button onclick=\"doDelete3(this.id)\" id="+i+">Delete</button></td></tr>";
+		 				$("#Display_table").append(s);
+		 			}
+		 		});
+
+		 	}
+		 	function doPost4(url){
+				window.location.href = "Comment.html";
+		 	}
+		 	function doPost5(url){
+		 		$.post(url, {operation:"Transaction"}, function(data){
+		 			$("#Display_table tr").empty();
+		 			$("#Display_table").append("<tr><th>TransactionID</th><th>ProductID</th><th>AmountModification</th><th>TotalPrice</th><th>ModificationTime</th><th>Edit</th><th>Delete</th></tr>");
+		 			var s = "";
+		 			for (var i = 0; i < data.TransactionID.length; i++) {
+		 				s = "<tr><td>" + data.TransactionID[i] + "</td><td>" + data.ProductID[i] + "</td><td>" + data.AmountModification[i]+ "</td><td>" + data.TotalPrice[i]+ "</td><td>" + data.ModificationTime[i]+"</td><td><button onclick=\"doEdit5(this.id)\" id="+i+">edit</button></td><td><button onclick=\"doDelete5(this.id)\" id="+i+">Delete</button></td></tr>";
+		 				$("#Display_table").append(s);
+		 			}
+		 		});
+		 	}
+
+		</script>
+
+	</body>
+
+
+
+</html>
