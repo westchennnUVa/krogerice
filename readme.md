@@ -9,4 +9,5 @@ Semantic UI<br>
 ## BackEnd and Database
 Servlet<br>
 JDBC<br>
-MySQL database on Amazon RDS cloud database
+MySQL database on Amazon RDS cloud database<br>
+<br>Thanks!
